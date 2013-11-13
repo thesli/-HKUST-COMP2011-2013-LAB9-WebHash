@@ -33,6 +33,7 @@ int add_entry(Map_Entry* hashtable[],int size,const char keyword[],const char we
 	hashtable[index] = new Map_Entry;
 	strcpy(hashtable[index]->keyword,keyword);
 	strcpy(hashtable[index]->webaddress,webaddress);
+	cout << "add " << keyword << " at " << index << endl;
 	return 1;
 }
 	
